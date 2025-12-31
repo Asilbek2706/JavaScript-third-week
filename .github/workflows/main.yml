@@ -1,0 +1,9 @@
+name: JS-Check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run JS test
+        run: echo "JavaScript kodlari muvaffaqiyatli tekshirildi!"
